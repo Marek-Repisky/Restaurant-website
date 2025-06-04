@@ -1,0 +1,390 @@
+/*Vlastný font*/
+@font-face { font-family: Croissant; src: url('../fonts/CroissantOne-Regular.otf'); } 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Croissant, serif;
+}
+
+.banner {
+    background: #009579;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 20px;
+}
+
+.banner__text {
+    line-height: 1.4;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3rem;
+}
+
+.banner__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.banner__text,
+.banner__close > span {
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+nav div {
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 715px){
+    .nav-ul {
+        flex-direction: column;
+    }
+}
+
+.nav-ul li {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-ul li:hover {
+    color: #141C1C;
+    background-color: #ebe3e3;
+}
+
+.nav-ul a {
+    font-size: 1.6rem;
+    height: 100%;
+    width: 100%;
+    color: #ebe3e3;
+    padding: 15px 10px;
+}
+
+.nav-ul a:hover {
+    color: #141C1C;
+}
+
+.ReserveLink {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ReserveLink:hover {
+    background-color: #ebe3e3;
+    color: #141C1C;
+}
+
+.ReserveLink a {
+    display: block;
+    color: #ebe3e3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.ReserveLink:hover {
+    background-color: #ebe3e3;
+}
+
+.ReserveLink:hover a {
+    color: #141C1C;
+}
+
+/*Titulný obrázok a priestor*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url(../img/Food.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px){
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .home-image-wrapper img {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+.home-text-wrapper {
+    margin-top: 8vw;
+    max-width: 400px;
+}
+
+.home-text-wrapper h1 {
+    font-size: 8vh;
+    color: #ebe3e3;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Preklik na menu*/
+.menu-box {
+    background-color: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 120px;
+    height: 5rem;
+    width: 13rem;
+    font-size: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-box:hover {
+    background-color: #ebe3e3;
+    color: white;
+}
+
+.menu-box a {
+    color: #551a8b;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px;
+    color: #ebe3e3;
+}
+
+.table-section {
+    background-color: #8a5d5a;
+}
+
+.table-center {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ebe3e3;
+}
+
+table th {
+    font-size: 2rem;
+}
+
+table td {
+    font-size: 25px;
+}
+
+table, th, tr, td {
+    padding: 15px;
+    border: 2px solid;
+}
+
+.form-section {
+    background-color: #6c7b82;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+@media screen and (max-width: 400px){
+    form {
+        max-width: 200px;
+    }
+}
+
+label {
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 12px;
+    color: #ebe3e3;
+}
+
+input {
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px dotted ic ;
+}
+
+textarea {
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 5px;
+    border: 2px dotted black ;
+}
+
+.form-button {
+    background-color: #ebe3e3;
+    padding: 5px 10px;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.form-button:hover {
+    background-color: #141C1C;
+    color: #ebe3e3;
+}
+
+footer {
+    background-color: black;
+    color: #ebe3e3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-FRow {
+    font-size: 25px;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cookie-popup {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+}
+
+.cookie-popup button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+/*Chat tlačidlo*/
+.open-button {
+    background-color: #009579;
+    color: #ebe3e3;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid wheat;
+}
+
+/*Chat formulár*/
+#myForm {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+}
+
+.form-container {
+    max-width: 300px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    background-color: #424242;
+}
+
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #009579;
+    font-size: larger;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+

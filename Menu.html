@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Najlepšia reštaurácia na bloku">
+    <meta name="keywords" content="Reštaurácia, najlepšia">
+    <meta name="author" content="Marek Repiský">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link type="text/css" rel="stylesheet" href="css/Menu.css">
+    <!--Ikona pre banner-->
+    <link type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!--Banner-->
+    <div class="banner">
+        <div class="banner__text">
+            <!--KREATIVNY BOD-->
+            <!--odpočet sa aktualizuje každý deň-->
+            <strong>Pripomíname:</strong> Vianočné špeciality končia už za <em><span id="countdown">18</span></em> dní
+        </div>
+        <button class="banner__close" type="button">
+            <span class="material-icons">close</span>
+        </button>
+    </div>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo.png" alt="logo" width="50"></a>
+        </div> 
+        <ul class="nav-ul">
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Galeria.html">Galéria</a></li>
+            <li><a href="Recenzie.html">Recenzie</a></li>
+        </ul>
+        <div class="ReserveLink">
+            <a href="index.html#Rezervacia"><p>Rezervovať</p></a>
+        </div>
+    </nav>
+    
+    <!--Akordeón-->
+    <section class="home">
+        <div>
+            <h1>MENU</h1>
+        </div>
+        <div class="wrapper">
+            <button class="accordion">Grilovaný losos</button>
+            <div class="panel">
+              <p>Grilovaný filet z lososa ochutený zmesou byliniek a podávaný s pikantnou omáčkou z citrónového bylinkového masla. Sprevádza ho pečená zelenina a quinoa.</p>
+            </div>
+            <button class="accordion">Rizoto s hubami a hľuzovkami</button>
+            <div class="panel">
+              <p>Krémová ryža Arborio uvarená do dokonalosti so zmesou lesných húb a trochou hľuzovkového oleja. Ozdobené parmezánom a čerstvou pažítkou.</p>
+            </div>
+            <button class="accordion">Klasické kuracie mäso s parmezánom</button>
+            <div class="panel">
+              <p>Kuracie prsia opečené v panvici, poliate omáčkou marinara a roztaveným syrom mozzarella. Podáva sa na špagetách al dente s cesnakovým chlebom.</p>
+            </div>
+            <button class="accordion">Vegetariánske thajské zelené kari</button>
+            <div class="panel">
+              <p>V kokosovej omáčke so zeleným karí sa dusí nádherná zmes sezónnej zeleniny, tofu a thajských byliniek. Podáva sa s jazmínovou ryžou.</p>
+            </div>
+            <button class="accordion">Steak Prime Ribeye</button>
+            <div class="panel">
+              <p>Podávaný s krémovou cesnakovou kašou a dusenou sezónnou zeleninou. Pre väčšiu bohatosť je pokvapkaný redukciou z červeného vína.</p>
+            </div> 
+        </div>
+    </section>
+
+    <!--Chat popup-->
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h2>Chat</h2>
+          <textarea placeholder="Napíšte správu" name="msg" required></textarea>
+          <button type="submit" class="btn" onclick="showAlert2()">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      
+      <button id="chatButton" class="open-button" onclick="openForm()">Chat</button>
+
+    <footer>
+        <div class="footer-FRow">
+            <a href="mailto:menoRestauracie@gmail.com" target="_blank">Email</a>
+        </div>
+        <div>
+            <p>&copy; 2023 MenoRestauracie</p>
+            <p>Všetky práva vyhradené.</p>
+        </div>
+        <div class="footer-FRow">
+            <a href="tel:+421999888777" target="_blank">Telefón</a>
+        </div>
+    </footer>
+
+    <script src="js/Menu.js"></script>
+</body>
+</html>

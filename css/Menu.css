@@ -1,0 +1,263 @@
+/*Vlastný font*/
+@font-face { font-family: Croissant; src: url('../fonts/CroissantOne-Regular.otf'); } 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Croissant, serif;
+}
+
+.banner {
+    background: #009579;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 20px;
+}
+
+.banner__text {
+    line-height: 1.4;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3rem;
+}
+
+.banner__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.banner__text,
+.banner__close > span {
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+nav div {
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 715px){
+    .nav-ul {
+        flex-direction: column;
+    }
+}
+
+.nav-ul li {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-ul li:hover {
+    color: #141C1C;
+    background-color: #ebe3e3;
+}
+
+.nav-ul a {
+    font-size: 1.6rem;
+    height: 100%;
+    width: 100%;
+    color: #ebe3e3;
+    padding: 15px 10px;
+}
+
+.nav-ul a:hover {
+    color: #141C1C;
+}
+
+.ReserveLink {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ReserveLink:hover {
+    background-color: #ebe3e3;
+    color: #141C1C;
+}
+
+.ReserveLink a {
+    display: block;
+    color: #ebe3e3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.ReserveLink:hover {
+    background-color: #ebe3e3;
+}
+
+.ReserveLink:hover a {
+    color: #141C1C;
+}
+
+h1 {
+    font-size: 8vh;
+    color: #141C1C;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home {
+    background-color: #f5e6b7;
+    padding: 20px 20px;
+}
+
+/*Akordeón*/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: larger;
+  }
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+}
+
+footer {
+    background-color: black;
+    color: #ebe3e3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-FRow {
+    font-size: 25px;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Chat tlačidlo*/
+.open-button {
+    background-color: #009579;
+    color: #ebe3e3;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid wheat;
+}
+    
+/*Chat formulár*/
+#myForm {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+}
+    
+.form-container {
+    max-width: 300px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    background-color: #424242;
+}
+    
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #009579;
+    font-size: larger;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}

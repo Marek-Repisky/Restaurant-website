@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Najlepšia reštaurácia na bloku">
+    <meta name="keywords" content="Reštaurácia, najlepšia">
+    <meta name="author" content="Marek Repiský">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria</title>
+    <link type="text/css" rel="stylesheet" href="css/Galeria.css">
+    <!--Ikona pre banner-->
+    <link type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!--Banner-->
+    <div class="banner">
+        <div class="banner__text">
+            <!--KREATIVNY BOD-->
+            <!--odpočet sa aktualizuje každý deň-->
+            <strong>Pripomíname:</strong> Vianočné špeciality končia už za <em><span id="countdown">18</span></em> dní
+        </div>
+        <button class="banner__close" type="button">
+            <span class="material-icons">close</span>
+        </button>
+    </div>
+    <nav>
+        <div>
+            <a href="index.html"><img src="img/Logo.png" alt="logo" width="50"></a>
+        </div> 
+        <ul class="nav-ul">
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Galeria.html">Galéria</a></li>
+            <li><a href="Recenzie.html">Recenzie</a></li>
+        </ul>
+        <div class="ReserveLink">
+            <a href="index.html#Rezervacia"><p>Rezervovať</p></a>
+        </div>
+    </nav>
+    
+    <!--Slideshow-->
+    <section class="home">
+        <div>
+            <h1>GALÉRIA</h1>
+        </div>
+         <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!--Obrázky-->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="img/Salmon.jpg" style="width:100%" alt="Losos">
+                <div class="text">Grilovaný losos</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="img/Risotto.jpg" style="width:100%" alt="Rizoto">
+                <div class="text">Rizoto s hubami a hľuzovkami</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="img/Chicken.jpg" style="width:100%" alt="Kuracie mäso">
+                <div class="text">Klasické kuracie mäso s parmezánom</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="img/Curry.jpg" style="width:100%" alt="Karí">
+                <div class="text">Vegetariánske thajské zelené kari</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="img/Steak.jpg" style="width:100%" alt="Steak">
+                <div class="text">Steak Prime Ribeye</div>
+            </div>
+        
+            <!--Tlačítka na posávanie-->
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    
+        <!--Bodky dole-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    <!--Chat popup-->
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h2>Chat</h2>
+          <textarea placeholder="Napíšte správu" name="msg" required></textarea>
+          <button type="submit" class="btn" onclick="showAlert2()">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      
+      <button id="chatButton" class="open-button" onclick="openForm()">Chat</button>
+
+    <footer>
+        <div class="footer-FRow">
+            <a href="mailto:menoRestauracie@gmail.com" target="_blank">Email</a>
+        </div>
+        <div>
+            <p>&copy; 2023 MenoRestauracie</p>
+            <p>Všetky práva vyhradené.</p>
+        </div>
+        <div class="footer-FRow">
+            <a href="tel:+421999888777" target="_blank">Telefón</a>
+        </div>
+    </footer>
+
+    <script src="js/Galeria.js"></script>
+</body>
+</html>

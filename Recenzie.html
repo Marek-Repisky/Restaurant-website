@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Najlepšia reštaurácia na bloku">
+    <meta name="keywords" content="Reštaurácia, najlepšia">
+    <meta name="author" content="Marek Repiský">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenzie</title>
+    <link type="text/css" rel="stylesheet" href="css/Recenzie.css">
+    <!--Ikona pre banner-->
+    <link type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!--Banner-->
+    <div class="banner">
+        <div class="banner__text">
+            <!--KREATIVNY BOD-->
+            <!--odpočet sa aktualizuje každý deň-->
+            <strong>Pripomíname:</strong> Vianočné špeciality končia už za <em><span id="countdown">18</span></em> dní
+        </div>
+        <button class="banner__close" type="button">
+            <span class="material-icons">close</span>
+        </button>
+    </div>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo.png" alt="logo" width="50"></a>
+        </div> 
+        <ul class="nav-ul">
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Galeria.html">Galéria</a></li>
+            <li><a href="Recenzie.html">Recenzie</a></li>
+        </ul>
+        <div class="ReserveLink">
+            <a href="index.html#Rezervacia"><p>Rezervovať</p></a>
+        </div>
+    </nav>
+    
+    <section class="home">
+        <div>
+            <h1>Recenzie</h1>
+        </div>
+        <div class="wrapper">
+            <dl>
+                <dt>Kristína H.</dt>
+                    <dd>Reštaurácia "Gurmánsky Raj" ponúka výnimočný gastronomický zážitok s fantastickou kuchyňou, ústretovým personálom a príjemnou atmosférou. Ich <em>webová&nbsp;stránka</em> pôsobí <em>neuveriteľne&nbsp;dobre</em> s moderným dizajnom a prehľadným rozložením. </dd>
+                <dt>Michal K.</dt>
+                    <dd>Reštaurácia "Chutné Užitky" okrem skvelej kuchyne ponúka aj neuveriteľne peknú a prehľadnú <em>webovú&nbsp;stránku</em>, ktorá uľahčuje objednávanie a <em>poskytuje&nbsp;všetky&nbsp;potrebné&nbsp;informácie</em>. 100%</dd>
+                <dt>Lucia S.</dt>
+                    <dd>S nezabudnuteľným gastronomickým zážitkom a dojímavou <em>webovou&nbsp;stránkou</em> sa restaurácia "La Delizia" vyčleňuje. Jej <em>vizuálne&nbsp;atraktívna</em> stránka nie len oslní, ale aj uľahčuje jednoduché online rezervácie, prispievajúc k celkovému pôvabu návštevy. Keby som tomu musela daj znamku bola by to 1.</dd>
+                <dt>Martin P.</dt>
+                    <dd>Začínajúc neopakovateľným gastronomickým dobrodružstvom a pútavou <em>webovou&nbsp;stránkou</em>, restaurácia "La Delizia" zaručuje nielen chuťový zážitok, ale aj <em>vizuálny&nbsp;pôvab</em>, čo spríjemňuje celkový návštevnícky zážitok. Už len kvôli tej stránke to stálo za to.</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!--Chat popup-->
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h2>Chat</h2>
+          <textarea placeholder="Napíšte správu" name="msg" required></textarea>
+          <button type="submit" class="btn" onclick="showAlert2()">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+      
+    <button id="chatButton" class="open-button" onclick="openForm()">Chat</button>
+
+    <footer>
+        <div class="footer-FRow">
+            <a href="mailto:menoRestauracie@gmail.com" target="_blank">Email</a>
+        </div>
+        <div>
+            <p>&copy; 2023 MenoRestauracie</p>
+            <p>Všetky práva vyhradené.</p>
+        </div>
+        <div class="footer-FRow">
+            <a href="tel:+421999888777" target="_blank">Telefón</a>
+        </div>
+    </footer>
+
+    <script src="js/Recenzie.js"></script>
+</body>
+</html>

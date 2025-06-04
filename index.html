@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Najlepšia reštaurácia na bloku">
+    <meta name="keywords" content="Reštaurácia, najlepšia">
+    <meta name="author" content="Marek Repiský">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reštaurácia</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--Ikona pre banner-->
+    <link type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!--Banner-->
+    <div class="banner">
+        <div class="banner__text">
+            <!--KREATIVNY BOD-->
+            <!--odpočet sa aktualizuje každý deň-->
+            <strong>Pripomíname:</strong> Vianočné špeciality končia už za <em><span id="countdown">18</span></em> dní
+        </div>
+        <button class="banner__close" type="button">
+            <span class="material-icons">close</span>
+        </button>
+    </div>
+    <!--Navigacia-->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo.png" alt="logo" width="50"></a>
+        </div> 
+        <ul class="nav-ul">
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Galeria.html">Galéria</a></li>
+            <li><a href="Recenzie.html">Recenzie</a></li>
+        </ul>
+        <!--KREATIVNY BOD-->
+        <!--Smooth scrolling-->
+        <div class="ReserveLink">
+            <a href="#Rezervacia">Rezervovať</a>
+        </div>
+    </nav>
+    
+    <!--Titulný obrázok-->
+    <section class="home-section" id="domov">
+        <div class="wrapper">
+            <div class="home-text-wrapper">
+                <h1>VELMI VELKY NADPIS</h1>
+            </div>
+            <!--Preklik na menu-->
+            <div class="menu-box">
+                <a href="Menu.html">MENU</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Otváracie hodiny tabuľka-->
+    <section class="table-section">
+        <h2>Otváracie hodiny</h2>
+        <div class="table-center">
+            <table>
+                <tr>
+                    <th>PO</th>
+                    <th>UT</th>
+                    <th>ST</th>
+                    <th>ŠT</th>
+                    <th>PI</th>
+                    <th>SO</th>
+                    <th>NE</th>
+                </tr>
+                <tr>
+                    <td id="Rezervacia">9<sup>00</sup> - 17<sup>00</sup></td>
+                    <td>9<sup>00</sup> - 17<sup>00</sup></td>
+                    <td>9<sup>00</sup> - 17<sup>00</sup></td>
+                    <td>9<sup>00</sup> - 17<sup>00</sup></td>
+                    <td>9<sup>00</sup> - 17<sup>00</sup></td>
+                    <td>17<sup>00</sup> - 22<sup>00</sup></td>
+                    <td>17<sup>00</sup> - 22<sup>00</sup></td>
+            </table>
+        </div>
+    </section>
+
+    <!--KREATIVNY BOD-->
+    <!--Chat popup-->
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h2>Chat</h2>
+          <textarea placeholder="Napíšte správu" name="msg" required></textarea>
+          <button type="submit" class="btn" onclick="showAlert2()">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      
+      <button id="chatButton" class="open-button" onclick="openForm()">Chat</button>
+      
+    <!--Formulár na rezerváciu-->
+    <section class="form-section">
+        <h2>Rezervácia</h2>
+        <div class="form-wrapper">
+            <form onsubmit="showAlert()">
+                <label for="meno">Meno</label>
+                <input type="text" placeholder="Vložte svoje meno" id="meno" required>
+                <label for="priezvisko">Priezvisko</label>
+                <input type="text" placeholder="Vložte svoje priezvisko" id="priezvisko" required>
+                <label for="e-mail">E-mail</label>
+                <input type="email" placeholder="Vložte svoje email" id="e-mail" required>
+                <label for="amountOfPeople">Počet ľudí</label>
+                <input type="number" placeholder="Počet ľudí" id="amountOfPeople" required>
+                <label for="date">Dátum</label>
+                <input type="datetime-local" id="date" required>
+                <textarea cols="15" rows="4" placeholder="Špecálne požiadavky" id="SpecialRequirements"></textarea>
+                <div>
+                    <input type="checkbox" id="checkbox" required>
+                    <label for="checkbox">Súhlasím so spracovaním osobných údajov</label>
+                </div>
+                <button type="submit" class="form-button">Odoslať</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-FRow">
+            <a href="mailto:menoRestauracie@gmail.com" target="_blank">Email</a>
+        </div>
+        <div>
+            <p>&copy; 2023 MenoRestauracie</p>
+            <p>Všetky práva vyhradené.</p>
+        </div>
+        <div class="footer-FRow">
+            <a href="tel:+421999888777" target="_blank">Telefón</a>
+        </div>
+    </footer>
+
+    <!--KREATIVNY BOD-->
+    <!--Cookie popup na konci stránky-->
+    <!--Nachádza sa len na tejto stránke-->
+    <div id="cookie-popup" class="cookie-popup">
+        <p>Táto webová stránka používa súbory cookie, aby sme vám zabezpečili čo najlepší zážitok z našej webovej stránky.</p>
+        <button onclick="acceptCookies()">Akceptujem!</button>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
