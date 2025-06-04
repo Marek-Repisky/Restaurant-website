@@ -1,5 +1,5 @@
 /*Vlastný font*/
-@font-face { font-family: Croissant; src: url('../fonts/CroissantOne-Regular.otf'); } 
+@font-face { font-family: Croissant; src: url('../fonts/CroissantOne-Regular.woff2'); } 
 
 * {
     margin: 0;
