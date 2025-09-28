@@ -2,7 +2,7 @@
 
 A modern, responsive restaurant website built with HTML, CSS, and JavaScript. The site features a clean design with interactive elements and is fully localized in Slovak.
 <p align="center">
-  <img src="https://github.com/Marek-Repisky/Restaurant-website/blob/main/Gallery.png" alt=Restaurant gallery">
+  <img src="https://github.com/Marek-Repisky/Restaurant-website/blob/main/Gallery.png" alt="Restaurant gallery">
   <br />
   <i>Restaurant gallery</i>
 </p>
