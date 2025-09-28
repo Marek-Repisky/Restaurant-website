@@ -60,5 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
 function acceptCookies() {
     const popup = document.getElementById("cookie-popup");
     popup.style.display = "none";
+    localStorage.setItem("cookiesAccepted", "true"); // Add this line
 }
 
+function showCookiePopup() {
+    const popup = document.getElementById("cookie-popup");
+    if (popup) {
+        popup.style.display = "block";
+    }
+}
