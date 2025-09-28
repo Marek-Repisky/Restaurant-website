@@ -1,6 +1,6 @@
 # Restaurant Website
 
-A modern, responsive restaurant website built with HTML, CSS, and JavaScript. The site features a clean design with interactive elements and is fully localized in Slovak.
+A modern, responsive restaurant website built with HTML, CSS, and JavaScript. The site features a clean design with interactive elements and is fully localized in Slovak. [Link](https://portfolio-la-delizia.netlify.app/).
 <p align="center">
   <img src="https://github.com/Marek-Repisky/Restaurant-website/blob/main/Gallery.png" alt="Restaurant gallery">
   <br />
