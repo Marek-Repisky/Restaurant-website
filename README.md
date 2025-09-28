@@ -4,7 +4,7 @@ A modern, responsive restaurant website built with HTML, CSS, and JavaScript. Th
 <p align="center">
   <img src="https://github.com/Marek-Repisky/Restaurant-website/blob/main/Gallery.png" alt=Restaurant gallery">
   <br />
-  <i>Obrázok 1: Restaurant gallery</i>
+  <i>Restaurant gallery</i>
 </p>
 
 ## 🍽️ Features
